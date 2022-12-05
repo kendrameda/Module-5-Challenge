@@ -9,9 +9,11 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
-  $('#hour-9').click(function(){
-    window.localStorage;
-  });
+ 
+
+
+
+
  
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -21,14 +23,27 @@ $(function () {
   //
 
 
+
+
+
+
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
 
 
+
+
+
+
   // TODO: Add code to display the current date in the header of the page.
   var today = dayjs()
   $('#currentDay').text(today.format('MMM D, YYYY'));
   console.log(today);
+
+  var now = dayjs()
+  $().text(now.format('h:m:s A'));
+  console.log(now);
+  
 });
